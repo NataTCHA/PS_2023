@@ -17,17 +17,7 @@ package correction {
   }
 
 }
-  rule pronom c{
- pattern {
-e:GOV -[subj]-> DEP ;DEP[form="c'"]
-}
- commands {
- del_edge e; 
-add_edge GOV-[subj@expl]-> DEP
-
-} 
-}
-}
+  
 
 strat main{
   Onf (correction)
