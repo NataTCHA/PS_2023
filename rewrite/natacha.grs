@@ -24,3 +24,19 @@ strat main{
 }
 
 
+  	rule  lemma je {
+    pattern {
+  	  N [form="je", lemma=il];
+   	    }
+    commands {
+  	  N.lemma = "je";
+   	    }
+  }
+  	rule  lemma tu{
+    pattern {
+  	  N [form="tu", lemma=il];
+   	    }
+    commands {
+  	  N.lemma = "tu";
+   	    }
+  }
